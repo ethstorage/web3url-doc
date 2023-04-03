@@ -4,7 +4,7 @@
 
 The following standard allows for the implementation of a standard API for file system directories within smart contracts. This standard provides basic functionality to read/write binary objects for any size, as well as allow reading/writing chunks of the object if the object is too large to fit in a single transaction.
 
-For more information, can checkout the [original proposal](https://github.com/ethstorage/W3IPs/blob/main/W3IPS/w3ip-3.md).
+For more information, you can checkout the [original proposal](https://github.com/ethstorage/W3IPs/blob/main/W3IPS/w3ip-3.md).
 
 ### Proposed APIs
 
