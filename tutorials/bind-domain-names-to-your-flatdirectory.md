@@ -6,7 +6,7 @@ In the previous section, your website has been uploaded to a FlatDirectory contr
 
 ENS is the most widely used name service in crypto, but interacting with a smart contract on ETH is super expensive (especially uploading a large amount of data), so it will be great to bind an ENS name to an [EIP-3770](https://eips.ethereum.org/EIPS/eip-3770) Address (a chain-specific address standard), and users can upload data on a cheaper chain/layer2 and still be able to use their ENS name to point to that.
 
-As ENS users, you can add a new text record named “web3” (the value is an EIP-3770 address) in the ENS setting panel, and the Web3URL gateway will handle the rest of it.
+As ENS users, you can add a new text record named “contentcontract” (the value is an EIP-3770 address) in the ENS setting panel, and the Web3URL gateway will handle the rest of it.
 
 <figure><img src="../.gitbook/assets/Screen Shot 2022-11-24 at 14.42.35.png" alt=""><figcaption></figcaption></figure>
 
