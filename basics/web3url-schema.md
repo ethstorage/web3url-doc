@@ -36,21 +36,23 @@ The specification here only specifies for the read EVM message. Write message wi
 A Web3 URL is in the following form
 
 ```
-Web3URL = "web3://" [userinfo "@"] contractName [":" chainid] path ["?" query]
-contractName = address | name "." nsProvider
+web3URL = web3Schema [userinfo "@"] contractName [":" chainid] path ["?" query]
+web3Schema = [ "ethereum-web3://" | "eth-web3://" | "web3://" ]
+contractName = address | [name "." [ subDomain0 "." ... ]] nsProviderSuffix
 path = ["/" method ["/" argument_0 ["/" argument_1 ... ]]]
 argument = [type "!"] value
-query = ["returns=(" returnTypes ")"]
-returnTypes = returnType1 ["," returnType2 ...]
+query = "attribute_1=value_1 [ "&" attribute_2=value_2 ... ]
+attribute = "returns" | "returnTypes" | other_attribute
 ```
 
 where
 
-* "web3://" indicates the Web3 URL **schema**.
+* **web3Schema** indicates the schema of the URL, which is `web3://` or `w3://` for short.
 * **userinfo** indicates which user is calling the EVM, i.e., "From" field in EVM call message. If not specified, the protocol will use 0x0 as the sender address.
 * **contractName** indicates the contract to be called, i.e., "To" field in the EVM call message. If the **contractName** is an **address**, i.e., 0x + 20-byte-data hex, then "To" will be the address. Otherwise, the name is from a name service. In the second case, **nsProvider** will be the short name of name service providers such as "ens", "w3q", etc. For ENS, the resolution happens via the [proposed EIP-6821](https://ethereum-magicians.org/t/eip-6821-support-ens-name-for-web3-url/13654). For others name providers, it will be defined in future proposals.
 * **chainid** indicates which chain to call the message. If not specified, the protocol will use the same chain as the name service provider, e.g., 1 for eth, and 333 for w3q. If no name service provider is available, the default chainid is 1.
-* **returnTypes** tells the format of the returned data. If not specified, the returned message data will be parsed as abi.encode()'d bytes and MIME will be set based on the suffix of the last argument. If **returnTypes** is "()", the returned data will be parsed in raw bytes in JSON. Otherwise, the returned message will be parsed in the specified "returnTypes" in JSON.
+* **query** is an optional component containing a sequence of attribute-value pairs separated by "&".
+* **returns** attribute in **query** tells the format of the returned data. If not specified, the returned message data will be parsed in "(bytes32)" and MIME will be set based on the suffix of the last argument. If **returns** is "()", the returned data will be parsed in raw bytes in JSON.  Otherwise, the returned message will be parsed in the specified **returns** attribute in JSON.  If multiple **returns** attributes are present, the value of the last **returns** attribute will be applied. Note that **returnTypes** is the alias of **returns**, but it is not recommended to use and is mainly for backward-compatible purpose.
 
 #### Resolver Mode
 
