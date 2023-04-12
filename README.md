@@ -6,7 +6,7 @@ description: Introduction of Web3URL
 
 > Web3URL is an access protocol for future web3
 
-This is what we believe the future of Web3 should be.&#x20;
+This is what we believe the future of Web3 should be.&#x20; 
 
 In other words, every component in our Web2 from the user side and server side must be decentralized in Web3.
 
