@@ -1,13 +1,35 @@
 # Table of contents
 
-* [Web3URL](README.md)
+* [Introduction](README.md)
 
-## Overview
+## Vision
 
+* [Vision](overview/vision.md)
 * [Background](overview/background.md)
 * [The Problem](overview/the-problem.md)
 * [Our Solution](overview/our-solution.md)
 * [Examples](overview/examples.md)
+
+## web3:// URL structure
+* [Basic structure](structure/base.md)
+* [Domain name resolution](structure/domain-name.md)
+* [Resolve mode](structure/resolve-mode.md)
+  * [Auto mode](structure/mode-auto.md)
+  * [Manual mode](structure/mode-manual.md)
+  * [Resource request mode](structure/mode-resource-request.md)
+
+## web3:// clients
+* EVM Browser
+* W3link HTTPS gateway
+* Web3curl app
+
+## Tutorial
+* Build an URL to access data from a smartcontract
+* Build a on-chain website
+
+
+
+
 
 ## Basics
 
