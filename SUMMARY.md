@@ -35,10 +35,8 @@
 ## Advanced topics
 
 * [FlatDirectory](advanced-topics/flatdirectory.md)
-* [Resolve Modes in FlatDirectory](advanced-topics/resolve-modes-in-flatdirectory.md)
-* [Web3 Improvement Proposals (W3IPs)](https://github.com/ethstorage/W3IPs)
 
-## EthStorage Information
+## EthStorage information
 
 * [Networks](information/networks.md)
 * [Links](information/links.md)

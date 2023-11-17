@@ -2,7 +2,7 @@
 
 ## web3:// Gateway
 
-[Web3url-gateway](https://github.com/ethstorage/web3url-gateway) is an opensource gateway for ``web3://`` URLs. It works by translating HTTPS URLs into ``web3://`` URLs, then process them using the [web3protocol-go engine](https://github.com/web3-protocol/web3protocol-go).
+[web3url-gateway](https://github.com/ethstorage/web3url-gateway) is an opensource gateway for ``web3://`` URLs. It works by translating HTTPS URLs into ``web3://`` URLs, then process them using the [web3protocol-go engine](https://github.com/web3-protocol/web3protocol-go).
 
 It handles two modes : all blockchains, or single-blockchain.
 
