@@ -26,7 +26,7 @@ This will call the ``resourceName`` method of the [``0xA5aFC9fE76a28fB12C60954Ed
 ### Arguments
 
 
-``methodArg`` is an argument of the method with a type-agnostic syntax of ``[ type "!" ] value``. If **type** is specified, the value will be translated to the corresponding type. The protocol currently supports these basic types: bool, int, uint, int&lt;X&gt;, uint&lt;X&gt; (with X ranging from 8 to 256 in steps of 8), address, bytes&lt;X&gt; (with X ranging from 1 to 32), bytes, and string. If **type** is not specified, then the type will be automatically detected using the following rule in a sequential way:
+``methodArg`` is an argument of the method with a syntax of ``[<type>!]<value>``. The protocol currently supports these basic types: bool, int, uint, int&lt;X&gt;, uint&lt;X&gt; (with X ranging from 8 to 256 in steps of 8), address, bytes&lt;X&gt; (with X ranging from 1 to 32), bytes, and string. If ``<type>!`` is not specified, then the type will be automatically detected using the following rule in a sequential way:
 
   1. **type**="uint256", if **value** is digits; or
   2. **type**="bytes32", if **value** is in the form of 0x+32-byte-data hex; or
@@ -65,7 +65,7 @@ The ``?return=`` query follows the syntax of the arguments part of the ethereum 
 
 Examples: ``(int)``, ``(string,int)``, ``(string[2],int[])``, ``(int,(string,int))``, ``(int,(string,int)[])``
 
-The encoding of the data will follow the Ethereum JSON-RPC format:
+The encoding of the returned data in the JSON will follow the Ethereum JSON-RPC format:
 - Unformatted data (bytes, address) will be encoded as hex, prefixed with "0x", two hex digits per byte
 - Quantities (integers) will be encoded as hex, prefix with "0x", the most compact representation (slight exception: zero should be represented as "0x0")
 - Boolean and strings will be native JSON boolean and strings

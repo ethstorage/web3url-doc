@@ -22,7 +22,7 @@ The domain name ``w3url.eth`` has a ``contentcontract`` TXT field with the value
 
 ### Find out how a domain name was resolved
 
-You can use the [web3curl app](https://github.com/web3-protocol/web3curl-js) in verbose mode to determine the domain name resolution of a smartcontract. For example : 
+You can use the [web3curl app](https://github.com/web3-protocol/web3curl-js) in verbose mode to determine how the domain name resolution of a smartcontract was made. For example : 
 
 ```
 node . -v 'web3://w3url.eth'

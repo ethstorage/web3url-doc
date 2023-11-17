@@ -29,10 +29,8 @@ In ``manual`` mode, the whole path of the ``web3://`` URL, unmodified, is sent a
 
 ```
     fallback(bytes calldata cdata) external returns (bytes memory) {
-        if(cdata.length == 0) {
+        if(cdata.length == 0 || cdata[0] != 0x2f) {
             return bytes("");
-        } else if(cdata[0] != 0x2f) { // Ensure start of calldata is "/"
-            return abi.encode("Incorrect path");
         }
 
         // Frontpage call

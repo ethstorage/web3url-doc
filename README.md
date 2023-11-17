@@ -4,7 +4,7 @@
 
 It is meant to be similar to the ``https://`` protocol : one can browse websites and download content using their web browser, CURL-like apps, ... except that the content come from blockchains.
 
-Web3 URLs are very similar in structure to traditional ``https://`` URLs, and have been defined in several [Ethereum ERC standards](structure/basic.md).
+Web3 URLs are very similar in structure to traditional ``https://`` URLs, and have been defined in several [Ethereum ERC standards](structure/base.md).
 
 Learn more about [the ``web3://`` vision](./vision/vision.md)
 
@@ -28,7 +28,7 @@ This on-chain website is located in the ``0xEbcA4860ebBe969E9Bc42643fcb437879dBD
 web3://0x4e1f41613c9084fdb9e34e11fae9412427480e56/tokenHTML/9352
 ```
 
-This URL will fetch the HTML of the NFT number 9352 of the Terraforms NFT collection located at ``[0x4e1f41613c9084fdb9e34e11fae9412427480e56](https://etherscan.io/address/0x4e1f41613c9084fdb9e34e11fae9412427480e56)`` on the Ethereum mainnet blockchain.
+This URL will fetch the HTML of the NFT number 9352 of the Terraforms NFT collection located at [``0x4e1f41613c9084fdb9e34e11fae9412427480e56``](https://etherscan.io/address/0x4e1f41613c9084fdb9e34e11fae9412427480e56) on the Ethereum mainnet blockchain.
 
 > ⏩ Try now with a [web3:// gateway](https://0x4e1f41613c9084fdb9e34e11fae9412427480e56.w3eth.io/tokenHTML/9352), with the [EVM browser](https://github.com/nand2/ethereum-browser) or the [web3curl app](https://github.com/web3-protocol/web3curl-js)
 
@@ -47,7 +47,7 @@ This URL will fetch the balance of USDC of the account ``nemorino.eth``.
 
 ## 2 categories of smartcontracts
 
-Before fetching data, the ``web3://`` protocol determine the **resolve mode** of the smartcontract, to know how to deal with it.
+Before fetching data, the ``web3://`` protocol determine the **resolve mode** of the smartcontract, to know how to deal with it. Learn more about [resolve modes](structure/resolve-mode.md).
 
 ### Generic smartcontracts
 
