@@ -13,7 +13,7 @@ will call the [``0xAD41bf1c7f22F0ec988DaC4C0aE79119Cab9BB7E``](https://etherscan
 > ⏩ Try now with a [web3:// gateway](https://terraformnavigator.w3eth.io/), with the [EVM browser](https://github.com/nand2/ethereum-browser) or the [web3curl app](https://github.com/web3-protocol/web3curl-js)
 
 
-### Declare a smartcontract as manual mode
+## Declare a smartcontract as manual mode
 
 To declare a smartcontract as being of ``manual`` mode, the smartcontract has to implement this interface : 
 
@@ -23,7 +23,7 @@ To declare a smartcontract as being of ``manual`` mode, the smartcontract has to
     }
 ```
 
-### Process page requests
+## Process page requests
 
 In ``manual`` mode, the whole path of the ``web3://`` URL, unmodified, is sent as calldata to the smartcontract, which can process it in his ``fallback(bytes)`` method. The returned data MUST be ``abi.encode``-d ``bytes``. The path sent as calldata is always at minimum ``/``. Here is an example of an implementation of a router for the smartcontract: 
 
@@ -55,7 +55,7 @@ In ``manual`` mode, the whole path of the ``web3://`` URL, unmodified, is sent a
 ```
 
 
-### MIME type
+## MIME type
 
 Similar to traditional ``https:// ``, the ``web3://`` protocol returns an HTTP status code and HTTP headers. The ``auto`` mode by default returns the ``Content-type: text/html`` header.
 

@@ -5,7 +5,7 @@ The ``web3://`` protocol support at least the Ethereum Name Service (ENS) domain
 The base resolution supported is a simple domain name to address resolution.
 
 
-### Advanced cross-chain name resolution
+## Advanced cross-chain name resolution
 
 🟠 This cross-chain mechanism is in draft status (ERC-6821) but is unlikely to change much.
 
@@ -20,7 +20,7 @@ web3://w3url.eth
 The domain name ``w3url.eth`` has a ``contentcontract`` TXT field with the value ``w3q-g:0xEbcA4860ebBe969E9Bc42643fcb437879dBDa9C6``, which indicate that the smartcontract to request in at the address ``0xEbcA4860ebBe969E9Bc42643fcb437879dBDa9C6`` on the blockchain identified by his short name ``w3q-g``.
 
 
-### Find out how a domain name was resolved
+## Find out how a domain name was resolved
 
 You can use the [web3curl app](https://github.com/web3-protocol/web3curl-js) in verbose mode to determine how the domain name resolution of a smartcontract was made. For example : 
 

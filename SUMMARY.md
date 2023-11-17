@@ -4,11 +4,11 @@
 
 ## Vision
 
-* [Vision](overview/vision.md)
-* [Background](overview/background.md)
-* [The Problem](overview/the-problem.md)
-* [Our Solution](overview/our-solution.md)
-* [Examples](overview/examples.md)
+* [Vision](vision/vision.md)
+* [Background](vision/background.md)
+* [The Problem](vision/the-problem.md)
+* [Our Solution](vision/our-solution.md)
+* [Examples](vision/examples.md)
 
 ## web3:// URL structure
 * [Basic structure](structure/base.md)
@@ -19,28 +19,12 @@
   * [Resource request mode](structure/mode-resource-request.md)
 
 ## web3:// clients
-* EVM Browser
-* W3link HTTPS gateway
-* Web3curl app
+* [HTTPS gateways](clients/https-gateway.md)
+* [EVM Browser](clients/evm-browser.md)
+* [Web3curl](clients/web3curl.md)
+* [Librairies](clients/librairies.md)
 
-Librairies
-Debugging
-
-## Tutorial
-* Build an URL to access data from a smartcontract
-* Build a on-chain website
-
-
-
-
-
-## Basics
-
-* [Web3URL Schema](basics/web3url-schema.md)
-* [Web3URL Gateways](basics/web3url-gateways.md)
-* [FlatDirectory](basics/flatdirectory.md)
-
-## Tutorials
+## Tutorials on EthStorage testnet
 
 * [Upload Your First File/Folder with ethfs-uploader](tutorials/upload-your-first-file-folder-with-ethfs-uploader.md)
 * [Upload Your First File with ethfs-sdk](tutorials/upload-your-first-file-with-ethfs-sdk.md)
@@ -48,12 +32,13 @@ Debugging
 * [Register Your First W3NS Name](tutorials/register-your-first-w3ns-name.md)
 * [Sample Applications](tutorials/sample-applications.md)
 
-## ADVANCED TOPICS
+## Advanced topics
 
+* [FlatDirectory](advanced-topics/flatdirectory.md)
 * [Resolve Modes in FlatDirectory](advanced-topics/resolve-modes-in-flatdirectory.md)
 * [Web3 Improvement Proposals (W3IPs)](https://github.com/ethstorage/W3IPs)
 
-## Information
+## EthStorage Information
 
 * [Networks](information/networks.md)
 * [Links](information/links.md)

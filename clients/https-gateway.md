@@ -1,13 +1,40 @@
-# Web3URL Gateways
+# HTTPS gateways
 
-## w3link.io
+## web3:// Gateway
 
-w3link.io is a neutral gateway that supports multiple blockchains. The users can access web3:// using the following two formats.
+[Web3url-gateway](https://github.com/ethstorage/web3url-gateway) is an opensource gateway for ``web3://`` URLs. It works by translating HTTPS URLs into ``web3://`` URLs, then process them using the [web3protocol-go engine](https://github.com/web3-protocol/web3protocol-go).
 
-* https://\[name].\[NS\_suffix].\[chain\_id or short name].w3link.io
-* https://\[contract address].\[chain\_id or short name].w3link.io
+It handles two modes : all blockchains, or single-blockchain.
 
-Supported networks are listed here:
+### All blockchains support
+
+In this case, assuming a gateway domain of ``example.com``, the URLs will be :
+
+| web3 URL                                                    | HTTPS URL                                                                |
+|-------------------------------------------------------------|--------------------------------------------------------------------------|
+| ``web3://<domainName>.<domainNameSuffix>/<path>``           | ``https://<domainName>.<domainNameSuffix>.1.example.com/<path>``         |
+| ``web3://<contractAddress>/<path>``                         | ``https://<contractAddress>.1.example.com/<path>``                       |
+| ``web3://<domainName>.<domainNameSuffix>:<chainId>/<path>`` | ``https://<domainName>.<domainNameSuffix>.<chaidId>.example.com/<path>`` |
+| ``web3://<contractAddress>:<chainId>/<path>``               | ``https://<contractAddress>.<chaidId>.example.com/<path>``               |
+
+### Single blockchain support
+
+In this case, assuming a gateway domain of ``ethexample.com``, and the blockchain being ethereum mainnet, the URLs will be :
+
+| web3 URL                                          | HTTPS URL                                           |
+|---------------------------------------------------|-----------------------------------------------------|
+| ``web3://<domainName>.<domainNameSuffix>/<path>`` | ``https://<domainName>.ethexample.com/<path>``      |
+| ``web3://<contractAddress>/<path>``               | ``https://<contractAddress>.ethexample.com/<path>`` |
+
+
+## w3link.io all-blockchains public gateway
+
+Provided by the [EthStorage](https://eth-store.w3eth.io) team, the w3link.io gateway is an all-blockchain public gateway. It supports the following formats:
+
+* ``https://<domainName>.<domainNameSuffix>.<chainIdOrShortName>.w3link.io``
+* ``https://<contractAddress>.<chainIdOrShortName>.w3link.io``
+
+Supported networks are listed here : 
 
 | Chain Name                 | Chain Short Name and Chain Id | Samples                                                                                                                                                                                                          |
 | -------------------------- | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -38,25 +65,17 @@ Supported networks are listed here:
 | Evmos                      | evmos / 9001                  | [https://0xc5e00d3b04563950941f7137b5afa3a534f0d6d6.evmos.w3link.io/name?returns=(string)](https://0xc5e00d3b04563950941f7137b5afa3a534f0d6d6.evmos.w3link.io/name?returns=\(string\))                           |
 | Evmos Testnet              | evmos-testnet / 9000          | [https://0xae95d4890bf4471501e0066b6c6244e1caaee791.evmos-testnet.w3link.io/name?returns=(string)](https://0xae95d4890bf4471501e0066b6c6244e1caaee791.evmos-testnet.w3link.io/name?returns=\(string\))           |
 
-## w3eth.io
 
-w3eth.io is a specialized gateway for the Ethereum mainnet and ENS. The users can access web3:// using the following two formats.
+## w3eth.io single-blockchain public gateway
 
-* https://\[name].w3eth.io
-* https://\[contract address].w3eth.io
+Provided by the [EthStorage](https://eth-store.w3eth.io) team, w3eth.io is a single-blockchain public gateway for Ethereum mainnet and ENS. It supports the following formats:
 
-Several Samples:
+
+* ``https://<domainName>.w3eth.io``
+* ``https://<contractAddress>.w3eth.io``
+
+Several examples:
 
 * [https://cyberbrokers-meta.w3eth.io/renderBroker/5](https://cyberbrokers-meta.w3eth.io/renderBroker/5)
 * [https://0x79a7aa92314fda49262649c6aef543fb0a652243.w3eth.io/render/78/0](https://0x79a7aa92314fda49262649c6aef543fb0a652243.w3eth.io/render/78/0)
 * [https://vitalikblog.w3eth.io/](https://vitalikblog.w3eth.io/)
-
-## More specialized gateways will come soon
-
-* w3bnb.io for BSC
-* w3matic.io for Polygon
-* w3avax.io for Avalanche
-* w3ftm.io for Fantom
-* w3evmos.io for Evmos
-* w3one.io for Harmony
-* ......

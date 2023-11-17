@@ -21,7 +21,7 @@ will call the [``0x2b51a751d3c7d3554e28dc72c3b032e5f56aa656``](https://etherscan
 > ⏩ Try now with a [web3:// gateway](https://0x2b51a751d3c7d3554e28dc72c3b032e5f56aa656.w3eth.io/), with the [EVM browser](https://github.com/nand2/ethereum-browser) or the [web3curl app](https://github.com/web3-protocol/web3curl-js)
 
 
-### Declare a smartcontract as resource request mode
+## Declare a smartcontract as resource request mode
 
 To declare a smartcontract as being of ``resource request`` mode, the smartcontract has to implement this interface : 
 
@@ -32,7 +32,7 @@ To declare a smartcontract as being of ``resource request`` mode, the smartcontr
 ```
 
 
-### Process page requests
+## Process page requests
 
 In ``resource request`` mode, the path of the URL is processed on the browser side, and fed to the following interface (defined in ERC-5219) : 
 
