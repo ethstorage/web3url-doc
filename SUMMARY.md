@@ -23,6 +23,9 @@
 * W3link HTTPS gateway
 * Web3curl app
 
+Librairies
+Debugging
+
 ## Tutorial
 * Build an URL to access data from a smartcontract
 * Build a on-chain website
