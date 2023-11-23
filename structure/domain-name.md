@@ -17,12 +17,12 @@ For example:
 web3://w3url.eth
 ```
 
-The domain name ``w3url.eth`` has a ``contentcontract`` TXT field with the value ``w3q-g:0xEbcA4860ebBe969E9Bc42643fcb437879dBDa9C6``, which indicate that the smartcontract to request in at the address ``0xEbcA4860ebBe969E9Bc42643fcb437879dBDa9C6`` on the blockchain identified by his short name ``w3q-g``.
+The domain name ``w3url.eth`` has a ``contentcontract`` TXT field with the value ``w3q-g:0xEbcA4860ebBe969E9Bc42643fcb437879dBDa9C6``, which indicate that the smart contract to request in at the address ``0xEbcA4860ebBe969E9Bc42643fcb437879dBDa9C6`` on the blockchain identified by his short name ``w3q-g``.
 
 
 ## Find out how a domain name was resolved
 
-You can use the [web3curl app](https://github.com/web3-protocol/web3curl-js) in verbose mode to determine how the domain name resolution of a smartcontract was made. For example : 
+You can use the [web3curl app](https://github.com/web3-protocol/web3curl-js) in verbose mode to determine how the domain name resolution of a smart contract was made. For example : 
 
 ```
 node . -v 'web3://w3url.eth'

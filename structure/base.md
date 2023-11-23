@@ -22,5 +22,5 @@ web3://<contract>[:<chainId>]/<path>
 The URLs are following a structure close to traditional HTTP URLs:
 
 - ``<contract>`` can either be an contract address such as ``0xA5aFC9fE76a28fB12C60954Ed6e2e5f8ceF64Ff2`` or a domain name such as ``w3url.eth``. Learn more about [domain name resolution](./domain-name.md).
-- ``chainId`` is optional and indicate the chain id of the blockchain where to query the smartcontract. ``web3://0x5a985f13345e820aa9618826b85f74c3986e1463:5/tokenHTML/2`` will for example query on the goerli blockchain (chain id = 5).
-- ``path`` follows a similar structure than traditional HTTP URLs, in the form of ``/path/path2?query1=xx&query2=xx``. To know how to build a path, we first need to know the [**resolve mode** of the called smartcontract](./resolve-mode.md)
+- ``chainId`` is optional and indicate the chain id of the blockchain where to query the smart contract. ``web3://0x5a985f13345e820aa9618826b85f74c3986e1463:5/tokenHTML/2`` will for example query on the goerli blockchain (chain id = 5).
+- ``path`` follows a similar structure than traditional HTTP URLs, in the form of ``/path/path2?query1=xx&query2=xx``. To know how to build a path, we first need to know the [**resolve mode** of the called smart contract](./resolve-mode.md)

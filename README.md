@@ -17,7 +17,7 @@ Learn more about [the ``web3://`` vision](./vision/vision.md)
 web3://w3url.eth
 ```
 
-This on-chain website is located in the ``0xEbcA4860ebBe969E9Bc42643fcb437879dBDa9C6`` smartcontract in the W3Q testnet blockchain.
+This on-chain website is located in the ``0xEbcA4860ebBe969E9Bc42643fcb437879dBDa9C6`` smart contract in the W3Q testnet blockchain.
 
 > ⏩ Try now with a [web3:// gateway](https://w3url.w3eth.io), with the [EVM browser](https://github.com/nand2/ethereum-browser) or the [web3curl app](https://github.com/web3-protocol/web3curl-js)
 
@@ -45,21 +45,21 @@ This URL will fetch the balance of USDC of the account ``nemorino.eth``.
 
 
 
-## 2 categories of smartcontracts
+## 2 categories of smart contracts
 
-Before fetching data, the ``web3://`` protocol determine the **resolve mode** of the smartcontract, to know how to deal with it. Learn more about [resolve modes](structure/resolve-mode.md).
+Before fetching data, the ``web3://`` protocol determine the **resolve mode** of the smart contract, to know how to deal with it. Learn more about [resolve modes](structure/resolve-mode.md).
 
-### Generic smartcontracts
+### Generic smart contracts
 
-The vast majority of existing smartcontracts were not specifically designed for the ``web3://`` protocol and thus the **resolve mode** will be ``auto``.
+The vast majority of existing smart contracts were not specifically designed for the ``web3://`` protocol and thus the **resolve mode** will be ``auto``.
 
-In this mode, the URL is structured to identify the smartcontract method to call, and the structure of the returned data. ``web3://usdc.eth/balanceOf/nemorino.eth?returns=(uint256)`` is an example of URL with a **resolve mode** of ``auto``.
+In this mode, the URL is structured to identify the smart contract method to call, and the structure of the returned data. ``web3://usdc.eth/balanceOf/nemorino.eth?returns=(uint256)`` is an example of URL with a **resolve mode** of ``auto``.
 
 Learn more about [auto mode URLs](structure/mode-auto.md)
 
-### Smartcontracts designed for ``web3://``
+### Smart contracts designed for ``web3://``
 
-When a smartcontract is designed for the ``web3://`` protocol, it will implement a specific interface, and there is much more freedom with URL paths.
+When a smart contract is designed for the ``web3://`` protocol, it will implement a specific interface, and there is much more freedom with URL paths.
 
 Two differents **resolve modes** exists for this scenario: ``manual`` and ``resource request``. ``web3://w3url.eth`` is an example of URL with a **resolve mode** of ``manual``.
 
