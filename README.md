@@ -1,6 +1,6 @@
 # Web3 protocol
 
-``web3://`` is a new protocol to access content returned by smartcontracts in EVM-compatible blockchains. 
+``web3://`` is a new protocol to access content returned by smart contracts in EVM-compatible blockchains. 
 
 It is meant to be similar to the ``https://`` protocol : one can browse websites and download content using their web browser, CURL-like apps, ... except that the content come from blockchains.
 
