@@ -63,4 +63,4 @@ When a smart contract is designed for the ``web3://`` protocol, it will implemen
 
 Two differents **resolve modes** exists for this scenario: ``manual`` and ``resource request``. ``web3://w3url.eth`` is an example of URL with a **resolve mode** of ``manual``.
 
-Learn more about [manual mode URLs](structure/mode-manual.md) and [5219 mode URLs](structure/mode-auto.md)
+Learn more about [manual mode URLs](structure/mode-manual.md) and [5219 mode URLs](structure/mode-resource-request.md)
