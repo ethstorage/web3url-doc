@@ -1,4 +1,4 @@
-# Resolve mode: manual
+# Resolve mode: resource request
 
 🟠 This resolve mode is in draft status (ERC-6944) and could be modified, although unlikely.
 
