@@ -24,7 +24,7 @@
 * [Web3curl](clients/web3curl.md)
 * [Librairies](clients/librairies.md)
 
-## Tutorials on EthStorage Testnet
+## Tutorials on EthStorage early testnet
 
 * [Upload Your First File/Folder with ethfs-uploader](tutorials/upload-your-first-file-folder-with-ethfs-uploader.md)
 * [Upload Your First File with ethfs-sdk](tutorials/upload-your-first-file-with-ethfs-sdk.md)
