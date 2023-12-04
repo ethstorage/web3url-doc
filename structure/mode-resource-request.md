@@ -18,7 +18,7 @@ web3://0x2b51a751d3c7d3554e28dc72c3b032e5f56aa656/
 
 will call the [``0x2b51a751d3c7d3554e28dc72c3b032e5f56aa656``](https://etherscan.io/address/0x2b51a751d3c7d3554e28dc72c3b032e5f56aa656) smart contract and return an HTML page, with links to other pages on the same domain, such as ``web3://0x2b51a751d3c7d3554e28dc72c3b032e5f56aa656/index/2``.
 
-> ⏩ Try now with a [web3:// gateway](https://0x2b51a751d3c7d3554e28dc72c3b032e5f56aa656.w3eth.io/), with the [EVM browser](https://github.com/nand2/ethereum-browser) or the [web3curl app](https://github.com/web3-protocol/web3curl-js)
+> ⏩ Try now with a [web3:// gateway](https://0x2b51a751d3c7d3554e28dc72c3b032e5f56aa656.w3eth.io/), or with the others ``web3://`` clients
 
 
 ## Declare a smart contract as resource request mode

@@ -20,7 +20,7 @@ web3://0xA5aFC9fE76a28fB12C60954Ed6e2e5f8ceF64Ff2/resourceName
 
 This will call the ``resourceName`` method of the [``0xA5aFC9fE76a28fB12C60954Ed6e2e5f8ceF64Ff2``](https://etherscan.io/address/0xA5aFC9fE76a28fB12C60954Ed6e2e5f8ceF64Ff2) smart contract, and return ``???``.
 
-> ⏩ Try now with a [web3:// gateway](https://0xA5aFC9fE76a28fB12C60954Ed6e2e5f8ceF64Ff2.w3eth.io/resourceName), with the [EVM browser](https://github.com/nand2/ethereum-browser) or the [web3curl app](https://github.com/web3-protocol/web3curl-js)
+> ⏩ Try now with a [web3:// gateway](https://0xA5aFC9fE76a28fB12C60954Ed6e2e5f8ceF64Ff2.w3eth.io/resourceName), or with the others ``web3://`` clients
 
 
 ## Arguments
@@ -42,7 +42,7 @@ web3://0x4e1f41613c9084fdb9e34e11fae9412427480e56/tokenHTML/9352
 
 This URL will return the result of the ``tokenHTML(uint)`` method of the [``0x4e1f41613c9084fdb9e34e11fae9412427480e56``](https://etherscan.io/address/0x4e1f41613c9084fdb9e34e11fae9412427480e56) smart contract in the Ethereum mainnet blockchain, using ``9352`` as an argument.
 
-> ⏩ Try now with a [web3:// gateway](https://0x4e1f41613c9084fdb9e34e11fae9412427480e56.w3eth.io/tokenHTML/9352), with the [EVM browser](https://github.com/nand2/ethereum-browser) or the [web3curl app](https://github.com/web3-protocol/web3curl-js)
+> ⏩ Try now with a [web3:// gateway](https://0x4e1f41613c9084fdb9e34e11fae9412427480e56.w3eth.io/tokenHTML/9352), or with the others ``web3://`` clients
 
 
 ```
@@ -51,7 +51,7 @@ web3://0x36f379400de6c6bcdf4408b282f8b685c56adc60/getIdToSVG/uint8!42
 
 In this example on the [``0x36f379400de6c6bcdf4408b282f8b685c56adc60``](https://etherscan.io/address/0x36f379400de6c6bcdf4408b282f8b685c56adc60) smart contract, the argument ``42`` is explicitely indicated to be an uint8.
 
-> ⏩ Try now with a [web3:// gateway](https://0x36f379400de6c6bcdf4408b282f8b685c56adc60.w3eth.io/getIdToSVG/uint8!42), with the [EVM browser](https://github.com/nand2/ethereum-browser) or the [web3curl app](https://github.com/web3-protocol/web3curl-js)
+> ⏩ Try now with a [web3:// gateway](https://0x36f379400de6c6bcdf4408b282f8b685c56adc60.w3eth.io/getIdToSVG/uint8!42), or with the others ``web3://`` clients
 
 
 
@@ -78,7 +78,7 @@ web3://0xA5aFC9fE76a28fB12C60954Ed6e2e5f8ceF64Ff2/levelAndTile/2/50?returns=(uin
 
 In this example on the [``0xA5aFC9fE76a28fB12C60954Ed6e2e5f8ceF64Ff2``](https://etherscan.io/address/0xA5aFC9fE76a28fB12C60954Ed6e2e5f8ceF64Ff2) smart contract, we call the ``levelAndTile`` which returns 2 ``uint256``. It will return ``["0x1","0x24"]``.
 
-> ⏩ Try now with a [web3:// gateway](https://0xA5aFC9fE76a28fB12C60954Ed6e2e5f8ceF64Ff2.w3eth.io/levelAndTile/2/50?returns=(uint256,uint256)), with the [EVM browser](https://github.com/nand2/ethereum-browser) or the [web3curl app](https://github.com/web3-protocol/web3curl-js)
+> ⏩ Try now with a [web3:// gateway](https://0xA5aFC9fE76a28fB12C60954Ed6e2e5f8ceF64Ff2.w3eth.io/levelAndTile/2/50?returns=(uint256,uint256)), or with the others ``web3://`` clients
 
 
 ```
@@ -130,4 +130,4 @@ web3://0x4e1f41613c9084fdb9e34e11fae9412427480e56/tokenSVG/9352?mime.type=svg
 
 This URL will return the result of the ``tokenSVG(uint)`` method of the [``0x4e1f41613c9084fdb9e34e11fae9412427480e56``](https://etherscan.io/address/0x4e1f41613c9084fdb9e34e11fae9412427480e56) smart contract, and an HTTP header of ``Content-type: image/svg+xml``.
 
-> ⏩ Try now with a [web3:// gateway](https://0x4e1f41613c9084fdb9e34e11fae9412427480e56.w3eth.io/tokenSVG/9352?mime.type=svg), with the [EVM browser](https://github.com/nand2/ethereum-browser) or the [web3curl app](https://github.com/web3-protocol/web3curl-js)
+> ⏩ Try now with a [web3:// gateway](https://0x4e1f41613c9084fdb9e34e11fae9412427480e56.w3eth.io/tokenSVG/9352?mime.type=svg), or with the others ``web3://`` clients

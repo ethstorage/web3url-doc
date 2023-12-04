@@ -19,7 +19,7 @@ web3://w3url.eth
 
 This on-chain website is located in the ``0xEbcA4860ebBe969E9Bc42643fcb437879dBDa9C6`` smart contract in the W3Q testnet blockchain.
 
-> ⏩ Try now with a [web3:// gateway](https://w3url.w3eth.io), with the [EVM browser](https://github.com/nand2/ethereum-browser) or the [web3curl app](https://github.com/web3-protocol/web3curl-js)
+> ⏩ Try now with a [web3:// gateway](https://w3url.w3eth.io), or with the others ``web3://`` clients
 
 
 #### Get a NFT
@@ -30,7 +30,7 @@ web3://0x4e1f41613c9084fdb9e34e11fae9412427480e56/tokenHTML/9352
 
 This URL will fetch the HTML of the NFT number 9352 of the Terraforms NFT collection located at [``0x4e1f41613c9084fdb9e34e11fae9412427480e56``](https://etherscan.io/address/0x4e1f41613c9084fdb9e34e11fae9412427480e56) on the Ethereum mainnet blockchain.
 
-> ⏩ Try now with a [web3:// gateway](https://0x4e1f41613c9084fdb9e34e11fae9412427480e56.w3eth.io/tokenHTML/9352), with the [EVM browser](https://github.com/nand2/ethereum-browser) or the [web3curl app](https://github.com/web3-protocol/web3curl-js)
+> ⏩ Try now with a [web3:// gateway](https://0x4e1f41613c9084fdb9e34e11fae9412427480e56.w3eth.io/tokenHTML/9352), or with the others ``web3://`` clients
 
 
 #### Fetch an USDC balance
@@ -41,7 +41,7 @@ web3://usdc.eth/balanceOf/nemorino.eth?returns=(uint256)
 
 This URL will fetch the balance of USDC of the account ``nemorino.eth``.
 
-> ⏩ Try now with a [web3:// gateway](https://usdc.w3eth.io/balanceOf/nemorino.eth?returns=(uint256)), with the [EVM browser](https://github.com/nand2/ethereum-browser) or the [web3curl app](https://github.com/web3-protocol/web3curl-js)
+> ⏩ Try now with a [web3:// gateway](https://usdc.w3eth.io/balanceOf/nemorino.eth?returns=(uint256)), or with the others ``web3://`` clients
 
 
 

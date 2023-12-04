@@ -10,7 +10,7 @@ web3://terraformnavigator.eth/
 
 will call the [``0xAD41bf1c7f22F0ec988DaC4C0aE79119Cab9BB7E``](https://etherscan.io/address/0xAD41bf1c7f22F0ec988DaC4C0aE79119Cab9BB7E) smart contract and return an HTML page, with links to other pages on the same domain, such as ``web3://terraformnavigator.eth/index/2``.
 
-> ⏩ Try now with a [web3:// gateway](https://terraformnavigator.w3eth.io/), with the [EVM browser](https://github.com/nand2/ethereum-browser) or the [web3curl app](https://github.com/web3-protocol/web3curl-js)
+> ⏩ Try now with a [web3:// gateway](https://terraformnavigator.w3eth.io/), or with the others ``web3://`` clients
 
 
 ## Declare a smart contract as manual mode
@@ -67,4 +67,4 @@ web3://terraformnavigator.eth/view/9352.svg
 
 In this URL, it will call the [``0xAD41bf1c7f22F0ec988DaC4C0aE79119Cab9BB7E``](https://etherscan.io/address/0xAD41bf1c7f22F0ec988DaC4C0aE79119Cab9BB7E) smart contract and send ``/view/9352.svg`` as calldata. Because the path ends with ``.svg`` and ``svg`` correspond to the ``image/svg+xml`` MIME type, the returned header will be ``Content-type: image/svg+xml``.
 
-> ⏩ Try now with a [web3:// gateway](https://terraformnavigator.w3eth.io/view/9352.svg), with the [EVM browser](https://github.com/nand2/ethereum-browser) or the [web3curl app](https://github.com/web3-protocol/web3curl-js)
+> ⏩ Try now with a [web3:// gateway](https://terraformnavigator.w3eth.io/view/9352.svg), or with the others ``web3://`` clients
