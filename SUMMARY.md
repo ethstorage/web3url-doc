@@ -1,21 +1,31 @@
 # Table of contents
 
-* [Web3URL](README.md)
+* [Introduction](README.md)
 
-## Overview
+## Vision
 
-* [Background](overview/background.md)
-* [The Problem](overview/the-problem.md)
-* [Our Solution](overview/our-solution.md)
-* [Examples](overview/examples.md)
+* [Vision](vision/vision.md)
+* [Background](vision/background.md)
+* [The Problem](vision/the-problem.md)
+* [Our Solution](vision/our-solution.md)
+* [Examples](vision/examples.md)
 
-## Basics
+## web3:// URL structure
+* [Basic structure](structure/base.md)
+* [Domain name resolution](structure/domain-name.md)
+* [Resolve mode](structure/resolve-mode.md)
+  * [Auto mode](structure/mode-auto.md)
+  * [Manual mode](structure/mode-manual.md)
+  * [Resource request mode](structure/mode-resource-request.md)
 
-* [Web3URL Schema](basics/web3url-schema.md)
-* [Web3URL Gateways](basics/web3url-gateways.md)
-* [FlatDirectory](basics/flatdirectory.md)
+## web3:// clients
+* [HTTPS gateways](clients/https-gateway.md)
+* [EVM Browser](clients/evm-browser.md)
+* [Chrome extension](clients/chrome-extension.md)
+* [Web3curl](clients/web3curl.md)
+* [Librairies](clients/librairies.md)
 
-## Tutorials
+## Tutorials on EthStorage early testnet
 
 * [Upload Your First File/Folder with ethfs-uploader](tutorials/upload-your-first-file-folder-with-ethfs-uploader.md)
 * [Upload Your First File with ethfs-sdk](tutorials/upload-your-first-file-with-ethfs-sdk.md)
@@ -23,12 +33,11 @@
 * [Register Your First W3NS Name](tutorials/register-your-first-w3ns-name.md)
 * [Sample Applications](tutorials/sample-applications.md)
 
-## ADVANCED TOPICS
+## Advanced topics
 
-* [Resolve Modes in FlatDirectory](advanced-topics/resolve-modes-in-flatdirectory.md)
-* [Web3 Improvement Proposals (W3IPs)](https://github.com/ethstorage/W3IPs)
+* [FlatDirectory](advanced-topics/flatdirectory.md)
 
-## Information
+## EthStorage information
 
 * [Networks](information/networks.md)
 * [Links](information/links.md)
