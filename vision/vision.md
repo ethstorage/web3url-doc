@@ -2,11 +2,11 @@
 description: Introduction of Web3URL
 ---
 
-# Web3URL
+# Vision
 
 > Web3URL is an access protocol for future web3
 
-This is what we believe the future of Web3 should be.&#x20; 
+This is what we believe the future of Web3 should be.
 
 In other words, every component in our Web2 from the user side and server side must be decentralized in Web3.
 
@@ -21,4 +21,4 @@ Achieving all these seem to be extremely challenging. The following graph illust
 2. When the user types a web3 URL (e.g., web3://xxxxx), the extension will parse the URL and translate it to a blockchain message (e.g., calling a smart contract). Then the extension will deliver the message to the P2P network and query the result. For any result returned from the network, the extension fully verified that the result is trusted.
 3. The trusted result is returned to the web browser. The result will be mostly like an HTML document that may contain more web3 URLs.
 
-![Fully Decentralized Web Solution](<.gitbook/assets/image (4).png>)
+![Fully Decentralized Web Solution](<../.gitbook/assets/image (4).png>)

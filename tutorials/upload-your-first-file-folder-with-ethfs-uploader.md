@@ -37,7 +37,7 @@ If the RPC URL of the chain can also be specified.
 npx ethfs-uploader --create --privateKey 0x112233... --chainId 5 --RPC https://...
 ```
 
-You will get a FlatDirectory address: [<mark style="color:blue;">0x37DF32c7a3c30D352453dadACc838461d8629016</mark>](https://explorer.galileo.web3q.io/address/0x37DF32c7a3c30D352453dadACc838461d8629016/transactions) <mark style="color:blue;"></mark> after the transaction is confirmed.
+You will get a FlatDirectory address: [<mark style="color:blue;">0x37DF32c7a3c30D352453dadACc838461d8629016</mark>](https://explorer.galileo.web3q.io/address/0x37DF32c7a3c30D352453dadACc838461d8629016/transactions) after the transaction is confirmed.
 
 <figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
@@ -73,7 +73,23 @@ The execution results are as follows.
 
 <figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
-## Step 4: Browse Your File!
+## Step 4: Set Default File
+
+You can also set the default file for FlatDirectory using the _default_ command.
+
+Run the command to set the default file.
+
+```
+npx ethfs-uploader --default --address <address> --file <name> --privateKey <private-key>
+```
+
+The command to set the default file "_hello.txt"_ for "_0x37D...9016_" is:
+
+```
+npx ethfs-uploader --default w3q-g:0x37D... --file hello.txt. --privateKey 0x1122..
+```
+
+## Step 5: Browse Your File!
 
 Now, you should be able to browse the files that are just uploaded via
 
@@ -85,7 +101,11 @@ Our two file access addresses are:
 
 [https://0x37df32c7a3c30d352453dadacc838461d8629016.w3q-g.w3link.io/img/1.jpeg](https://0x37df32c7a3c30d352453dadacc838461d8629016.w3q-g.w3link.io/img/1.jpeg)
 
-## Step 5: Read and Write FlatDirectory with js code
+Because the default file has been set to "_hello.txt"_ above, you can access it through the following link.
+
+[https://0x37df32c7a3c30d352453dadacc838461d8629016.w3q-g.w3link.io/](https://0x37df32c7a3c30d352453dadacc838461d8629016.w3q-g.w3link.io/hello.txt)
+
+## Step 6: Read and Write FlatDirectory with js code
 
 Get the abi of the FlatDirectory contract.
 
