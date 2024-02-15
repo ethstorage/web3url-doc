@@ -2,7 +2,7 @@
 
 🟠 This resolve mode is in draft status (ERC-6944) and could be modified, although unlikely.
 
-A ``resource request`` resolve mode smart contract is designed for the ``web3://`` protocol. In this case, any path is valid, and the smart contract will usually returned some content for at least the root path.
+A ``resource request`` resolve mode smart contract is designed for the ``web3://`` protocol. In this case, any path is valid, and all the requests go through the ``request()`` method, which returns an HTTP status code, HTTP headers and the body.
 
 Compared to the ``manual`` mode:
 
@@ -10,13 +10,13 @@ Compared to the ``manual`` mode:
 - It allows control over the returned HTTP status code
 - Basic parsing of the path (path parts, query key/values) is offloaded to the browser side.
 
-For example:
+### Example
 
 ```
 web3://0x2b51a751d3c7d3554e28dc72c3b032e5f56aa656/
 ```
 
-will call the [``0x2b51a751d3c7d3554e28dc72c3b032e5f56aa656``](https://etherscan.io/address/0x2b51a751d3c7d3554e28dc72c3b032e5f56aa656) smart contract and return an HTML page, with links to other pages on the same domain, such as ``web3://0x2b51a751d3c7d3554e28dc72c3b032e5f56aa656/index/2``.
+will call the ``request()`` method of the [``0x2b51a751d3c7d3554e28dc72c3b032e5f56aa656``](https://etherscan.io/address/0x2b51a751d3c7d3554e28dc72c3b032e5f56aa656) smart contract and return an HTML page, with links to other pages on the same domain, such as ``web3://0x2b51a751d3c7d3554e28dc72c3b032e5f56aa656/index/2``.
 
 > ⏩ Try now with a [web3:// gateway](https://0x2b51a751d3c7d3554e28dc72c3b032e5f56aa656.w3eth.io/), or with the others ``web3://`` clients
 
@@ -88,3 +88,47 @@ contract TerraformNavigator is IDecentralizedApp {
     }
 }
 ```
+
+## Chunk support
+
+🟠 This feature is in PR pending status ([ERC-7617](https://github.com/ethereum/ERCs/pull/245/files)) and could be modified.
+
+The resource you want to return may be so large you will run into the max gas limitation of the RPC provider used. To handle this problem, you can use the `chunking` feature: in your `request()` return, return a `web3-next-chunk` HTTP header with a `web3://` URL pointing to the next chunk of data. It will then loop until there is no more `web3-next-chunk` HTTP header returned. Please note that : 
+
+- The contract pointed by the `web3://` URL must be also in ``resource request`` resolve mode.
+- The `web3://` URL can be relative (e.g. `/xx/yy?a=b`) or absolute (e.g. `web3://zzzz/xx/yy?a=b`).
+
+Hint: You can use solidity's `gasleft()` function to make dynamic chunks.
+
+### Example
+
+```
+web3://0x64850db133e088fc1657c7bf9c00303d36d92736:11155111/getFile/abcd
+```
+
+- This will call the ``request()`` method of the [``0x64850db133e088fc1657c7bf9c00303d36d92736``](https://sepolia.etherscan.io/address/0x64850db133e088fc1657c7bf9c00303d36d92736) smart contract, and it will return a HTTP status code of `200`, the body `start`, and an `web3-next-chunk` HTTP header of value `/getFile/abcd?chunk=1`.
+- The `200` HTTP status code, the HTTP headers (with `web3-next-chunk` removed) and the initial body chunk `start` is sent right away to the web client.
+- The protocol then process the `web3://0x64850db133e088fc1657c7bf9c00303d36d92736:11155111/getFile/abcd?chunk=1` as it would a normal `web3://` URL, but it will only use the body and the `web3-next-chunk` HTTP header, if any, and ignore the rest. Here, the body is `middle` and the `web3-next-chunk` HTTP header is `/getFile/abcd?chunk=2`.
+- The body chunk `middle` is streamed to the web client.
+- The protocol then process the `web3://0x64850db133e088fc1657c7bf9c00303d36d92736:11155111/getFile/abcd?chunk=2`, and here the body is `end`, and there is no `web3-next-chunk` HTTP header.
+- The body chunk `end` is streamed to the web client, and it indicate to the web client that there is no more data.
+
+> ⏩ Try now with a [web3:// gateway](http://0x64850db133e088fc1657c7bf9c00303d36d92736.11155111.w3link.io/getFile/abcd), or with the others ``web3://`` clients
+
+
+## Compression / Content-encoding support
+
+🟠 This feature is in PR pending status ([ERC-7618](https://github.com/ethereum/ERCs/pull/246/files)) and could be modified.
+
+To optimize blockchain storage cost, you may want to store compressed assets, and return a `Content-encoding` HTTP header of value `gzip` or `br` (brotli). In this case, the protocol will decompress the data, and return it to the client, and the `Content-encoding` HTTP header won't be returned to the client.
+
+### Example
+
+```
+web3://0xb464cac335daec57d4f50657ec846c3109c774b2:3334/gzip.js
+```
+
+The smart contract ``0xb464cac335daec57d4f50657ec846c3109c774b2`` returns the string `console.log("hello world");` compressed in gzip, as well as a `Content-encoding: gzip` HTTP header. The `web3://` protocol, seeing the `Content-encoding` header, decompress and return the data, and remove the `Content-encoding` header from the ones forwarded to the web client.
+
+> ⏩ Try now with a [web3:// gateway](http://0xb464cac335daec57d4f50657ec846c3109c774b2.3334.w3link.io/gzip.js), or with the others ``web3://`` clients
+
