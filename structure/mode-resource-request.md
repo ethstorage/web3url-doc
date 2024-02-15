@@ -103,17 +103,17 @@ Hint: You can use solidity's `gasleft()` function to make dynamic chunks.
 ### Example
 
 ```
-web3://0x64850db133e088fc1657c7bf9c00303d36d92736:11155111/getFile/abcd
+web3://0x8e990356262a2f8164981298e167c3ad2409faa1:11155111/getFile/abcd
 ```
 
-- This will call the ``request()`` method of the [``0x64850db133e088fc1657c7bf9c00303d36d92736``](https://sepolia.etherscan.io/address/0x64850db133e088fc1657c7bf9c00303d36d92736) smart contract, and it will return a HTTP status code of `200`, the body `start`, and an `web3-next-chunk` HTTP header of value `/getFile/abcd?chunk=1`.
+- This will call the ``request()`` method of the [``0x8e990356262a2f8164981298e167c3ad2409faa1``](https://sepolia.etherscan.io/address/0x8e990356262a2f8164981298e167c3ad2409faa1) smart contract, and it will return a HTTP status code of `200`, the body `start`, and an `web3-next-chunk` HTTP header of value `/getFile/abcd?chunk=1`.
 - The `200` HTTP status code, the HTTP headers (with `web3-next-chunk` removed) and the initial body chunk `start` is sent right away to the web client.
-- The protocol then process the `web3://0x64850db133e088fc1657c7bf9c00303d36d92736:11155111/getFile/abcd?chunk=1` as it would a normal `web3://` URL, but it will only use the body and the `web3-next-chunk` HTTP header, if any, and ignore the rest. Here, the body is `middle` and the `web3-next-chunk` HTTP header is `/getFile/abcd?chunk=2`.
+- The protocol then process the `web3://0x8e990356262a2f8164981298e167c3ad2409faa1:11155111/getFile/abcd?chunk=1` as it would a normal `web3://` URL, but it will only use the body and the `web3-next-chunk` HTTP header, if any, and ignore the rest. Here, the body is `middle` and the `web3-next-chunk` HTTP header is `/getFile/abcd?chunk=2`.
 - The body chunk `middle` is streamed to the web client.
-- The protocol then process the `web3://0x64850db133e088fc1657c7bf9c00303d36d92736:11155111/getFile/abcd?chunk=2`, and here the body is `end`, and there is no `web3-next-chunk` HTTP header.
+- The protocol then process the `web3://0x8e990356262a2f8164981298e167c3ad2409faa1:11155111/getFile/abcd?chunk=2`, and here the body is `end`, and there is no `web3-next-chunk` HTTP header.
 - The body chunk `end` is streamed to the web client, and it indicate to the web client that there is no more data.
 
-> ⏩ Try now with a [web3:// gateway](http://0x64850db133e088fc1657c7bf9c00303d36d92736.11155111.w3link.io/getFile/abcd), or with the others ``web3://`` clients
+> ⏩ Try now with a [web3:// gateway](http://0x8e990356262a2f8164981298e167c3ad2409faa1.11155111.w3link.io/getFile/abcd), or with the others ``web3://`` clients
 
 
 ## Compression / Content-encoding support
