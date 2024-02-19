@@ -115,7 +115,7 @@ In this example, the ``getFile`` method will be called with ``file.svg`` as an a
 
 ### ``?mime.content=`` and ``?mime.type=``
 
-🟠 These two options are in PR pending status (ERC-7087) and could be modified, although unlikely.
+🟠 These two options are in draft status (ERC-7087) and could be modified, although unlikely.
 
 If no ``?returns=`` attribute is set, you can either use :
 
