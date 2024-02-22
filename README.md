@@ -53,7 +53,7 @@ Before fetching data, the ``web3://`` protocol determine the **resolve mode** of
 
 The vast majority of existing smart contracts were not specifically designed for the ``web3://`` protocol and thus the **resolve mode** will be ``auto``.
 
-In this mode, the URL is structured to identify the smart contract method to call, and the structure of the returned data. ``web3://usdc.eth/balanceOf/nemorino.eth?returns=(uint256)`` is an example of URL with a **resolve mode** of ``auto``.
+In this mode, the URL is structured to identify the smart contract method to call, and the structure of the returned data. ``web3://0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/balanceOf/nemorino.eth?returns=(uint256)`` is an example of URL with a **resolve mode** of ``auto``.
 
 Learn more about [auto mode URLs](structure/mode-auto.md)
 
