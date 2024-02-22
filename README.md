@@ -36,7 +36,7 @@ This URL will fetch the HTML of the NFT number 9352 of the Terraforms NFT collec
 #### Fetch an USDC balance
 
 ```
-web3://usdc.eth/balanceOf/nemorino.eth?returns=(uint256)
+web3://0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/balanceOf/nemorino.eth?returns=(uint256)
 ```
 
 This URL will fetch the balance of USDC of the account ``nemorino.eth``.
