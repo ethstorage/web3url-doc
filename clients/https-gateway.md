@@ -64,7 +64,7 @@ Supported networks are listed here :
 | Harmony Testnet Shard 0    | hmy-b-s0 / 1666700000         | [https://0xc9c8ba8c7e2eaf43e84330db08915a8106d7bd74.hmy-b-s0.w3link.io/name?returns=(string)](https://0xc9c8ba8c7e2eaf43e84330db08915a8106d7bd74.hmy-b-s0.w3link.io/name?returns=\(string\))                     |
 | Evmos                      | evmos / 9001                  | [https://0xc5e00d3b04563950941f7137b5afa3a534f0d6d6.evmos.w3link.io/name?returns=(string)](https://0xc5e00d3b04563950941f7137b5afa3a534f0d6d6.evmos.w3link.io/name?returns=\(string\))                           |
 | Evmos Testnet              | evmos-testnet / 9000          | [https://0xae95d4890bf4471501e0066b6c6244e1caaee791.evmos-testnet.w3link.io/name?returns=(string)](https://0xae95d4890bf4471501e0066b6c6244e1caaee791.evmos-testnet.w3link.io/name?returns=\(string\))           |
-
+| Story Protocol Testnet     | storyprotocoltest / 1513      | [https://0x87a9636ab208e6861d0b7c039a14d5af67a337cd.storyprotocoltest.w3link.io/name?returns=(string)](https://0x87a9636ab208e6861d0b7c039a14d5af67a337cd.storyprotocoltest.w3link.io/name?returns=(string))     |
 
 ## w3eth.io single-blockchain public gateway
 
