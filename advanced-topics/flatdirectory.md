@@ -82,8 +82,7 @@ function removeChunk(bytes memory name, uint256 chunkId) external returns (bool)
 
 ### Implementation
 
-An example of the implementation can be found [here](https://github.com/ethstorage/evm-large-storage/blob/main/contracts/examples/FlatDirectory.sol).&#x20;
-
+An example of the implementation can be found [here](https://github.com/ethstorage/evm-large-storage/blob/master/contracts/examples/FlatDirectory.sol).
 
 ## Resolve Modes in FlatDirectory
 
@@ -149,4 +148,3 @@ contract SimpleFlatDirectory {
 Then the same URL `https://<contract address>.<chain id>.<gateway>/files/index.html` will directly put `/files/index.html` as calldata into the function call, while your web handler is expected to do the parsing. Therefore in this example, the correct way to invoke the `files` method should be `https://<contract address>.<chain id>.<gateway>/index.html` without the "files" path.
 
 In short, _auto_ resolve mode should suffice in most use cases, which establishes 1-to-1 relationship between the gateway URLs and the contract method, but if your web handler needs to take care of more complicated queries (such as nested paths) then _manual_ resolve may be more suitable.
-

@@ -18,7 +18,7 @@ The npm page of ethfs-sdk can be found [here](https://www.npmjs.com/package/ethf
 
 ## Step 2: Create the FlatDirectory Contract
 
-We want to create a [FlatDirectory](https://docs.web3url.io/basics/flatdirectory) with the ethfs-sdk.
+We want to create a [FlatDirectory](https://docs.web3url.io/advanced-topics/flatdirectory) with the ethfs-sdk.
 
 #### Browser
 

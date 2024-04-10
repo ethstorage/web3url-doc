@@ -19,7 +19,7 @@ The npm page of ethfs-uploader can be found [here](https://www.npmjs.com/package
 
 ## Step 2: Create the FlatDirectory Contract
 
-We want to create a [FlatDirectory](https://docs.web3url.io/basics/flatdirectory) with the private key 0x112233... on the default Chain (Galileo Testnet)
+We want to create a [FlatDirectory](https://docs.web3url.io/advanced-topics/flatdirectory) with the private key 0x112233... on the default Chain (Galileo Testnet)
 
 ```
 npx ethfs-uploader --create --privateKey 0x112233...
