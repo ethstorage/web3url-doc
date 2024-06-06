@@ -22,6 +22,7 @@
 * [HTTPS gateways](clients/https-gateway.md)
 * [EVM Browser](clients/evm-browser.md)
 * [Chrome extension](clients/chrome-extension.md)
+* [Web3:// Sandbox](clients/web3-sandbox.md)
 * [Web3curl](clients/web3curl.md)
 * [Librairies](clients/librairies.md)
 
