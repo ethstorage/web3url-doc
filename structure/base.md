@@ -24,5 +24,5 @@ Here is the list of ERCs :
 - [ERC-6821](https://eips.ethereum.org/EIPS/eip-6821): (Draft) ENS resolution : support for the ``contentcontract`` TXT field to point to a contract in another chain. Still in draft status.
 - [ERC-6944](https://eips.ethereum.org/EIPS/eip-6944): (Draft) New resolve mode offloading some parsing processing on the browser side, based on [ERC-5219](https://eips.ethereum.org/EIPS/eip-5219). Still in draft status.
 - [ERC-7087](https://eips.ethereum.org/EIPS/eip-7087) : (Draft) Auto mode : Add MIME type support. Still in draft status.
-- [ERC-7617](https://github.com/ethereum/ERCs/pull/245) : (Pending) Add chunk support in ERC-6944 resource request mode. Still in pending merge status.
-- [ERC-7618](https://github.com/ethereum/ERCs/pull/246) : (Pending) Add Content-encoding handling in ERC-6944 resource request mode. Still in pending merge status.
+- [ERC-7617](https://eips.ethereum.org/EIPS/eip-7617) : (Draft) Add chunk support in ERC-6944 resource request mode. Still in pending merge status.
+- [ERC-7618](https://eips.ethereum.org/EIPS/eip-7618) : (Draft) Add Content-encoding handling in ERC-6944 resource request mode. Still in pending merge status.

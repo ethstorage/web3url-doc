@@ -41,7 +41,7 @@ web3://0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/balanceOf/nemorino.eth?returns
 
 This URL will fetch the balance of USDC of the account ``nemorino.eth``.
 
-> ⏩ Try now with a [web3:// gateway](https://usdc.w3eth.io/balanceOf/nemorino.eth?returns=(uint256)), or with the others ``web3://`` clients
+> ⏩ Try now with a [web3:// gateway](https://0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48.w3eth.io/balanceOf/nemorino.eth?returns=(uint256)), or with the others ``web3://`` clients
 
 
 

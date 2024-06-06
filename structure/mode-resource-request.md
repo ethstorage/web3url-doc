@@ -91,7 +91,7 @@ contract TerraformNavigator is IDecentralizedApp {
 
 ## Chunk support
 
-🟠 This feature is in PR pending status ([ERC-7617](https://github.com/ethereum/ERCs/pull/245/files)) and could be modified.
+🟠 This feature is in draft status ([ERC-7617](https://eips.ethereum.org/EIPS/eip-7617)) and could be modified.
 
 The resource you want to return may be so large you will run into the max gas limitation of the RPC provider used. To handle this problem, you can use the `chunking` feature: in your `request()` return, return a `web3-next-chunk` HTTP header with a `web3://` URL pointing to the next chunk of data. It will then loop until there is no more `web3-next-chunk` HTTP header returned. Please note that : 
 
@@ -118,7 +118,7 @@ web3://0x8e990356262a2f8164981298e167c3ad2409faa1:11155111/getFile/abcd
 
 ## Compression / Content-encoding support
 
-🟠 This feature is in PR pending status ([ERC-7618](https://github.com/ethereum/ERCs/pull/246/files)) and could be modified.
+🟠 This feature is in draft status ([ERC-7618](https://eips.ethereum.org/EIPS/eip-7618)) and could be modified.
 
 To optimize blockchain storage cost, you may want to store compressed assets, and return a `Content-encoding` HTTP header of value `gzip` or `br` (brotli). In this case, the protocol will decompress the data, and return it to the client, and the `Content-encoding` HTTP header won't be returned to the client.
 
