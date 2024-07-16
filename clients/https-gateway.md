@@ -65,6 +65,7 @@ Supported networks are listed here :
 | Evmos                      | evmos / 9001                  | [https://0xc5e00d3b04563950941f7137b5afa3a534f0d6d6.evmos.w3link.io/name?returns=(string)](https://0xc5e00d3b04563950941f7137b5afa3a534f0d6d6.evmos.w3link.io/name?returns=\(string\))                           |
 | Evmos Testnet              | evmos-testnet / 9000          | [https://0xae95d4890bf4471501e0066b6c6244e1caaee791.evmos-testnet.w3link.io/name?returns=(string)](https://0xae95d4890bf4471501e0066b6c6244e1caaee791.evmos-testnet.w3link.io/name?returns=\(string\))           |
 | Story Protocol Testnet     | storyprotocoltest / 1513      | [https://0x87a9636ab208e6861d0b7c039a14d5af67a337cd.storyprotocoltest.w3link.io/name?returns=(string)](https://0x87a9636ab208e6861d0b7c039a14d5af67a337cd.storyprotocoltest.w3link.io/name?returns=(string))     |
+| Holesky Testnet     | holesky / 17000      | [https://0x144d5c8f1c1dba3a1e359d92c72a485fa3195cb7.holesky.w3link.io/name?returns=(string)](https://0x144d5c8f1c1dba3a1e359d92c72a485fa3195cb7.holesky.w3link.io/name?returns=(string))     |
 
 ## w3eth.io single-blockchain public gateway
 
