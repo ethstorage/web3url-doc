@@ -8,7 +8,7 @@ In this tutorial, we will demonstrate how to upload files using the **ethfs-sdk*
 
 You can install ethfs-sdk by the following command
 
-`npm i ethfs-sdk`
+`npm i ethstorage-sdk`
 
 or
 
