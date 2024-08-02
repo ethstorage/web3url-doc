@@ -28,10 +28,9 @@
 
 ## Tutorials on EthStorage early testnet
 
-* [Upload Your First File/Folder with ethfs-uploader](tutorials/upload-your-first-file-folder-with-ethfs-uploader.md)
-* [Upload Your First File with ethfs-sdk](tutorials/upload-your-first-file-with-ethfs-sdk.md)
+* [Upload Your First File/Folder with ethfs-cli](tutorials/upload-your-first-file-folder-with-ethfs-cli.md)
+* [Upload Your First File with ethstorage-sdk](tutorials/upload-your-first-file-with-ethstorage-sdk.md)
 * [Bind Domain Names to Your FlatDirectory](tutorials/bind-domain-names-to-your-flatdirectory.md)
-* [Register Your First W3NS Name](tutorials/register-your-first-w3ns-name.md)
 * [Sample Applications](tutorials/sample-applications.md)
 
 ## Advanced topics
