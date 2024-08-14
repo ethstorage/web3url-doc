@@ -31,7 +31,7 @@ If we want to create it on the other chains that support EVM, we need to change 
 ethfs-cli create -p 0x112233... -c 11155111
 ```
 
-If the RPC URL of the chain can also be specified.
+The RPC URL of the chain can also be specified.
 
 ```
 ethfs-cli create -p 0x112233... -r https://...
@@ -48,7 +48,7 @@ In this section, you will upload the folder into the FlatDirectory that you just
 Run the command to upload the file.
 
 ```
-ethfs-cli upload -a <address> -p <private-key> -f <directory|file> -c <chain-id> -t <upload-type>
+ethfs-cli upload -a <address> -p <private-key> -f <directory|file> -c [chain-id] -t <upload-type>
 ```
 
 The command to upload the contents of the "_dist"_ folder to the address "_0x336f...56b3d"_ is:

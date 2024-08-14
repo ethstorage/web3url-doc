@@ -8,7 +8,7 @@ ENS is the most widely used name service in crypto, but interacting with a smart
 
 As ENS users, you can add a new text record named “contentcontract” (the value is an EIP-3770 address) in the ENS setting panel, and the Web3URL gateway will handle the rest of it.
 
-<figure><img src="../.gitbook/assets/Screen Shot 2022-11-24 at 14.42.35.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/ens.png" alt=""><figcaption></figcaption></figure>
 
 Check out [https://w3url.w3eth.io](https://w3url.w3eth.io) and its [ENS setting page.](https://app.ens.domains/name/eth-store.eth/details)&#x20;
 
