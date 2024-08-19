@@ -16,25 +16,25 @@ Calling this above will output ``???``.
 Use the verbose mode option ``-v`` to have plenty of informations on what is going on. For example : 
 
 ```bash
-web3curl -v 'web3://w3url.eth'
+web3curl -v 'web3://web3url.eth'
 ```
 
 will output
 
 ```
-* Fetching URL web3://w3url.eth
+* Fetching URL web3://web3url.eth
 * Parsing URL ...
 * Host domain name resolver: ens
 *   Resolver address: 0xc0497E381f536Be9ce14B0dD3817cBcAe57d2F62
 *   Resolver chain id: 1
 *   Resolver chain RPC: https://ethereum.publicnode.com
-*   Domain name being resolved: w3url.eth
+*   Domain name being resolved: web3url.eth
 *   Resolution type: contentContractTxt
-*   contentcontract TXT record: w3q-g:0xEbcA4860ebBe969E9Bc42643fcb437879dBDa9C6
-*   Result address: 0xEbcA4860ebBe969E9Bc42643fcb437879dBDa9C6
-*   Result chain id: 3334
-* Contract address: 0xEbcA4860ebBe969E9Bc42643fcb437879dBDa9C6
-* Contract chain id: 3334
+*   contentcontract TXT record: esl2-t:0x5ad14e8439b9619e165db27545faf6df13e2b947
+*   Result address: 0x5ad14e8439b9619e165db27545faf6df13e2b947
+*   Result chain id: 3336
+* Contract address: 0x5ad14e8439b9619e165db27545faf6df13e2b947
+* Contract chain id: 3336
 * Resolve mode determination... 
 > 0xdd473fae
 < 0x6d616e75616c0000000000000000000000000000000000000000000000000000
@@ -45,8 +45,8 @@ will output
 * Contract return processing: decodeABIEncodedBytes: MIME type: text/html
 *
 * Calling contract ...
-* RPC: https://galileo.web3q.io:8545
-* Contract address: 0xEbcA4860ebBe969E9Bc42643fcb437879dBDa9C6
+* RPC: https://rpc.testnet.l2.ethstorage.io:9540
+* Contract address: 0x5ad14e8439b9619e165db27545faf6df13e2b947
 > 0x2f
 < 0x00000000000....0000000000000126
 *

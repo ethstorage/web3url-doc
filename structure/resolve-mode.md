@@ -31,7 +31,7 @@ function resolveMode() external returns (bytes32);
 You can use the [web3curl app](https://github.com/web3-protocol/web3curl-js) in verbose mode to determine the resolve mode of a smart contract. For example : 
 
 ```
-web3curl -v 'web3://w3url.eth'
+web3curl -v 'web3://web3url.eth'
 ...
 * Resolve mode determination... 
 > 0xdd473fae

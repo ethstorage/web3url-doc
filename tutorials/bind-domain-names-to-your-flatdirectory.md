@@ -10,5 +10,5 @@ As ENS users, you can add a new text record named “contentcontract” (the val
 
 <figure><img src="../.gitbook/assets/ens.png" alt=""><figcaption></figcaption></figure>
 
-Check out [https://w3url.w3eth.io](https://w3url.w3eth.io) and its [ENS setting page.](https://app.ens.domains/name/eth-store.eth/details)&#x20;
+Check out [https://web3url.w3eth.io](https://web3url.w3eth.io) and its [ENS setting page.](https://app.ens.domains/name/web3url.eth/details)&#x20;
 
