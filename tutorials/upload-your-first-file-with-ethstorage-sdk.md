@@ -43,6 +43,22 @@ You will get a FlatDirectory address which is something like 0x...
 
 In this section, you will upload some files into the FlatDirectory that you just created.
 
+Callback
+
+```
+const callback = {
+    onProgress: function (progress, count, isChange) {
+        ...
+    },
+    onFail: function (err) {
+        ...
+    },
+    onFinish: function (totalUploadChunks, totalUploadSize, totalStorageCost) {
+        ...
+    }
+};
+```
+
 #### Browser
 
 On the web page, you can use the input tag to get the file.
@@ -58,42 +74,12 @@ async function onInputChange (e) {
            await uploadFile(rawFile);
        }
 }
-```
 
-Use ethstorage-sdk to upload files.
-
-```
-const { FlatDirectory } = require("ethstorage-sdk");
-
-const directoryAddress = "0x37df32c7a3c30d352453dadacc838461d8629016";
-
-// callback
-const callback = {
-    onProgress: function (progress, count, isChange) {
-        ...
-    },
-    onFail: function (err) {
-        ...
-    },
-    onFinish: function (totalUploadChunks, totalUploadSize, totalStorageCost) {
-        ...
-    }
-};
-
-const uploadFile = async (rawFile) => {
-    const rpc = "https://rpc.testnet.l2.quarkchain.io:8545";
-    const privateKey = "0x...";
-
-    const flatDirectory = await FlatDirectory.create({
-        rpc: rpc,
-        privateKey: privateKey,
-        address: directoryAddress
-    });
-
+async function uploadFile(rawFile) {
    await flatDirectory.upload({
         key: rawFile.name,
         content: rawFile,
-        type: 1,
+        type: 2,
         callback: callback
     });
 }
@@ -104,37 +90,14 @@ const uploadFile = async (rawFile) => {
 Node.js can read files using the **NodeFile** module.
 
 ```
-const { FlatDirectory } = require("ethstorage-sdk");
 const { NodeFile } = require("ethstorage-sdk/file");
 
-// callback
-const callback = {
-    onProgress: function (progress, count, isChange) {
-        ...
-    },
-    onFail: function (err) {
-        ...
-    },
-    onFinish: function (totalUploadChunks, totalUploadSize, totalStorageCost) {
-        ...
-    }
-};
-
-const uploadFile = async (directoryAddress, filePath, fileName) => {
-    const rpc = "https://rpc.testnet.l2.quarkchain.io:8545";
-    const privateKey = "0x...";
-
-    const flatDirectory = await FlatDirectory.create({
-        rpc: rpc,
-        privateKey: privateKey,
-        address: directoryAddress
-    });
- 
+async function uploadFile(filePath, fileName) {
     const file = new NodeFile(filePath);
     await flatDirectory.upload({
         key: fileName,
         content: file,
-        type: 1,
+        type: 2,
         callback: callback
     });
 }
