@@ -1,6 +1,6 @@
 # Examples
 
-### Example 1: Fully decentralized exchange <a href="#b6a2" id="b6a2"></a>
+### Example 1: Fully decentralized name service <a href="#b6a2" id="b6a2"></a>
 
 Suppose a user wants to use a fully decentralized name service in Web3, the user can do the following steps:
 
