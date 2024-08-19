@@ -14,12 +14,12 @@ Learn more about [the ``web3://`` vision](./vision/vision.md)
 #### Access an on-chain website
 
 ```
-web3://w3url.eth
+web3://web3url.eth
 ```
 
-This on-chain website is located in the ``0xEbcA4860ebBe969E9Bc42643fcb437879dBDa9C6`` smart contract in the W3Q testnet blockchain.
+This on-chain website is located in the ``0x5ad14e8439b9619e165db27545faf6df13e2b947`` smart contract in the QuarkChain L2 testnet blockchain.
 
-> ⏩ Try now with a [web3:// gateway](https://w3url.w3eth.io), or with the others ``web3://`` clients
+> ⏩ Try now with a [web3:// gateway](https://web3url.w3eth.io), or with the others ``web3://`` clients
 
 
 #### Get a NFT
@@ -61,6 +61,6 @@ Learn more about [auto mode URLs](structure/mode-auto.md)
 
 When a smart contract is designed for the ``web3://`` protocol, it will implement a specific interface, and there is much more freedom with URL paths.
 
-Two differents **resolve modes** exists for this scenario: ``manual`` and ``resource request``. ``web3://w3url.eth`` is an example of URL with a **resolve mode** of ``manual``.
+Two differents **resolve modes** exists for this scenario: ``manual`` and ``resource request``. ``web3://web3url.eth`` is an example of URL with a **resolve mode** of ``manual``.
 
 Learn more about [manual mode URLs](structure/mode-manual.md) and [5219 mode URLs](structure/mode-resource-request.md)

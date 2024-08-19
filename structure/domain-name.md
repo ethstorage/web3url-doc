@@ -1,6 +1,6 @@
 # Domain name resolution
 
-The ``web3://`` protocol support at least the Ethereum Name Service (ENS) domain name service, but other domain name services could be supported depending of the clients (W3NS name service from the Galileo blockchain, Linagee .og name service in Ethereum mainnet, ...)
+The ``web3://`` protocol support at least the Ethereum Name Service (ENS) domain name service, but other domain name services could be supported depending of the clients (Linagee .og name service in Ethereum mainnet, ...)
 
 The base resolution supported is a simple domain name to address resolution.
 
@@ -14,10 +14,10 @@ For the Ethereum Name Service, this functionality use a special TXT field, ``con
 For example:
 
 ```
-web3://w3url.eth
+web3://web3url.eth
 ```
 
-The domain name ``w3url.eth`` has a ``contentcontract`` TXT field with the value ``w3q-g:0xEbcA4860ebBe969E9Bc42643fcb437879dBDa9C6``, which indicate that the smart contract to request in at the address ``0xEbcA4860ebBe969E9Bc42643fcb437879dBDa9C6`` on the blockchain identified by his short name ``w3q-g``.
+The domain name ``web3url.eth`` has a ``contentcontract`` TXT field with the value ``esl2-t:0x5ad14e8439b9619e165db27545faf6df13e2b947``, which indicate that the smart contract to request in at the address ``0x5ad14e8439b9619e165db27545faf6df13e2b947`` on the blockchain identified by his short name ``esl2-t``.
 
 
 ## Find out how a domain name was resolved
@@ -25,16 +25,16 @@ The domain name ``w3url.eth`` has a ``contentcontract`` TXT field with the value
 You can use the [web3curl app](https://github.com/web3-protocol/web3curl-js) in verbose mode to determine how the domain name resolution of a smart contract was made. For example : 
 
 ```
-node . -v 'web3://w3url.eth'
+node . -v 'web3://web3url.eth'
 ...
 * Host domain name resolver: ens
 *   Resolver address: 0xc0497E381f536Be9ce14B0dD3817cBcAe57d2F62
 *   Resolver chain id: 1
 *   Resolver chain RPC: https://ethereum.publicnode.com
-*   Domain name being resolved: w3url.eth
+*   Domain name being resolved: web3url.eth
 *   Resolution type: contentContractTxt
-*   contentcontract TXT record: w3q-g:0xEbcA4860ebBe969E9Bc42643fcb437879dBDa9C6
-*   Result address: 0xEbcA4860ebBe969E9Bc42643fcb437879dBDa9C6
-*   Result chain id: 3334
+*   contentcontract TXT record: esl2-t:0x5ad14e8439b9619e165db27545faf6df13e2b947
+*   Result address: 0x5ad14e8439b9619e165db27545faf6df13e2b947
+*   Result chain id: 3336
 ...
 ```
