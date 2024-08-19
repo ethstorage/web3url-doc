@@ -37,7 +37,7 @@ The RPC URL of the chain can also be specified.
 ethfs-cli create -p 0x112233... -r https://...
 ```
 
-You will get a FlatDirectory address: [<mark style="color:blue;">0x336fBd105C07DB2317149bAE143e378Ccdf56b3d</mark>](https://explorer.testnet.l2.quarkchain.io/address/0x336fBd105C07DB2317149bAE143e378Ccdf56b3d/transactions) after the transaction is confirmed.
+You will get a FlatDirectory address: [<mark style="color:blue;">0x5fF2c5a1c66Fc7303E47DC3cFf804EEFc73EB6AD</mark>](https://explorer.testnet.l2.quarkchain.io/address/0x5fF2c5a1c66Fc7303E47DC3cFf804EEFc73EB6AD/transactions) after the transaction is confirmed.
 
 <figure><img src="../.gitbook/assets/img10.png" alt=""><figcaption></figcaption></figure>
 
@@ -48,13 +48,13 @@ In this section, you will upload the folder into the FlatDirectory that you just
 Run the command to upload the file.
 
 ```
-ethfs-cli upload -a <address> -p <private-key> -f <directory|file> -c [chain-id] -t <upload-type>
+ethfs-cli upload -a <address> -p <private-key> -f <directory|file> -c [chain-id] -t <upload-type> -e
 ```
 
-The command to upload the contents of the "_dist"_ folder to the address "_0x336f...56b3d"_ is:
+The command to upload the contents of the "_dist"_ folder to the address "_0x5fF2...B6AD"_ is:
 
 ```
-ethfs-cli upload -a 0x336f... -p 0x112233... -f /Users/.../dist -c 43069 -t 2
+ethfs-cli upload -a 0x5fF2... -p 0x112233... -f /Users/.../dist -c 43069 -t blob -e
 ```
 
 The execution results are as follows.
@@ -71,10 +71,10 @@ Run the command to set the default file.
 ethfs-cli default -a <address> -f <name> -p <private-key> -c <chain-id>
 ```
 
-The command to set the default file "_hello.txt"_ for "_0x336f...56b3d_" is:
+The command to set the default file "_hello.txt"_ for "_0x5fF2...B6AD_" is:
 
 ```
-ethfs-cli default -a 0x336f -f hello.txt -p 0x1122.. -c 43069
+ethfs-cli default -a 0x5fF2 -f hello.txt -p 0x1122.. -c 43069
 ```
 
 ## Step 5: Browse Your File!
@@ -85,11 +85,11 @@ Now, you should be able to browse the files that are just uploaded via
 
 Our two file access addresses are:
 
-[https://0x336fbd105c07db2317149bae143e378ccdf56b3d.3336.w3link.io/hello.txt](https://0x336fbd105c07db2317149bae143e378ccdf56b3d.3336.w3link.io/hello.txt)
+[https://0x5fF2c5a1c66Fc7303E47DC3cFf804EEFc73EB6AD.3336.w3link.io/hello.txt](https://0x5fF2c5a1c66Fc7303E47DC3cFf804EEFc73EB6AD.3336.w3link.io/hello.txt)
 
-[https://0x336fbd105c07db2317149bae143e378ccdf56b3d.3336.w3link.io/img/1.jpeg](https://0x336fbd105c07db2317149bae143e378ccdf56b3d.3336.w3link.io/img/1.jpeg)
+[https://0x5fF2c5a1c66Fc7303E47DC3cFf804EEFc73EB6AD.3336.w3link.io/img/1.jpeg](https://0x5fF2c5a1c66Fc7303E47DC3cFf804EEFc73EB6AD.3336.w3link.io/img/1.jpeg)
 
 Because the default file has been set to "_hello.txt"_ above, you can access it through the following link.
 
-[https://0x336fbd105c07db2317149bae143e378ccdf56b3d.3336.w3link.io/](https://0x336fbd105c07db2317149bae143e378ccdf56b3d.3336.w3link.io/)
+[https://0x5fF2c5a1c66Fc7303E47DC3cFf804EEFc73EB6AD.3336.w3link.io/](https://0x5fF2c5a1c66Fc7303E47DC3cFf804EEFc73EB6AD.3336.w3link.io/)
 
