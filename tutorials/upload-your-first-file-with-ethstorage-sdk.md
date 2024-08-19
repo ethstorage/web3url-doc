@@ -43,22 +43,6 @@ You will get a FlatDirectory address which is something like 0x...
 
 In this section, you will upload some files into the FlatDirectory that you just created.
 
-Callback
-
-```
-const callback = {
-    onProgress: function (progress, count, isChange) {
-        ...
-    },
-    onFail: function (err) {
-        ...
-    },
-    onFinish: function (totalUploadChunks, totalUploadSize, totalStorageCost) {
-        ...
-    }
-};
-```
-
 #### Browser
 
 On the web page, you can use the input tag to get the file.
@@ -101,6 +85,22 @@ async function uploadFile(filePath, fileName) {
         callback: callback
     });
 }
+```
+
+Callback
+
+```
+const callback = {
+    onProgress: function (progress, count, isChange) {
+        ...
+    },
+    onFail: function (err) {
+        ...
+    },
+    onFinish: function (totalUploadChunks, totalUploadSize, totalStorageCost) {
+        ...
+    }
+};
 ```
 
 ## Step 4: Read Your File!
