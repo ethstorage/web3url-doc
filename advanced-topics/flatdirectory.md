@@ -82,7 +82,7 @@ function removeChunk(bytes memory name, uint256 chunkId) external returns (bool)
 
 ### Implementation
 
-An example of the implementation can be found [here](https://github.com/ethstorage/evm-large-storage/blob/master/contracts/examples/FlatDirectory.sol).
+An example of the implementation can be found [here](https://github.com/ethstorage/evm-large-storage/blob/master/contracts/FlatDirectory.sol).
 
 ## Resolve Modes in FlatDirectory
 

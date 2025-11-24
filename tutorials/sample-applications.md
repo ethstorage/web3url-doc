@@ -1,8 +1,8 @@
 # Sample Applications
 
-The following summarizes some decentralized applications built on top of QuarkChain L2 networks
+The following summarizes some decentralized applications built on top of Sepolia networks
 
-## QuarkChain L2 Testnet (ChainID 43069)
+## Sepolia Testnet (ChainID 11155111)
 
 * Blog platform: [https://w3-blog.w3eth.io/](https://w3-blog.w3eth.io/)
 * W3Box: [https://w3-box.w3eth.io/](https://w3-box.w3eth.io/)

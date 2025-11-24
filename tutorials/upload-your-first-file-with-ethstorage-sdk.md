@@ -23,8 +23,8 @@ We want to create a [FlatDirectory](https://docs.web3url.io/advanced-topics/flat
 ```
 import { FlatDirectory } from "ethstorage-sdk";
 
-const rpc = "https://rpc.testnet.l2.quarkchain.io:8545";
-const ethStorageRpc = "https://rpc.testnet.l2.ethstorage.io:9540";
+const rpc = "https://rpc.sepolia.org";
+const ethStorageRpc = "https://rpc.testnet.ethstorage.io:9546";
 const privateKey = "0xabcd...";
 
 const flatDirectory = await FlatDirectory.create({
@@ -111,6 +111,6 @@ Now, you should be able to access the file you just uploaded via
 
 Our two file access addresses are:
 
-[https://0x336fbd105c07db2317149bae143e378ccdf56b3d.3336.w3link.io/hello.txt](https://0x336fbd105c07db2317149bae143e378ccdf56b3d.3336.w3link.io/hello.txt)
+[https://0x000B467A2eEe67fFef30922a1CE13F7D50Ad4C5f.3333.w3link.io/hello.txt](https://0x000B467A2eEe67fFef30922a1CE13F7D50Ad4C5f.3333.w3link.io/hello.txt)
 
-[https://0x336fbd105c07db2317149bae143e378ccdf56b3d.3336.w3link.io/img/1.jpeg](https://0x336fbd105c07db2317149bae143e378ccdf56b3d.3336.w3link.io/img/1.jpeg)
+[https://0x000B467A2eEe67fFef30922a1CE13F7D50Ad4C5f.3333.w3link.io/img/1.jpeg](https://0x000B467A2eEe67fFef30922a1CE13F7D50Ad4C5f.3333.w3link.io/img/1.jpeg)
